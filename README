@@ -1,14 +1,21 @@
-Linux kernel
-============
+Excel.wtf Linux Kernel
+Excel.wtf is a gaming-optimized fork of the Linux kernel, built for low latency, high performance, and a touch of WTF flair. It’s tuned for competitive gaming, with support for NVIDIA, AMD, and Intel GPUs, low-latency audio, and Steam Proton for running Windows games on Linux. Frag with style!
 
 There are several guides for kernel developers and users. These guides can
 be rendered in a number of formats, like HTML and PDF. Please read
-Documentation/admin-guide/README.rst first.
+Documentation/admin-guide/README.rst first for details on the Excel.wtf fork.
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.  The formatted documentation can also be read online at:
+To build the kernel:
 
-    https://www.kernel.org/doc/html/latest/
+Clone the repository: git clone https://github.com/fandombreh/Excel.wtf.git cd Excel.wtf
+Use the gaming-optimized config: make excelwtf_defconfig
+Compile the kernel: make -j$(nproc)
+Install (as root): sudo make modules_install install
+Update your bootloader (e.g., sudo update-grub).
+In order to build the documentation, use make htmldocs or
+make pdfdocs. The formatted documentation can also be read online at:
+
+https://www.kernel.org/doc/html/latest/
 
 There are various text files in the Documentation/ subdirectory,
 several of them using the reStructuredText markup notation.
@@ -16,3 +23,10 @@ several of them using the reStructuredText markup notation.
 Please read the Documentation/process/changes.rst file, as it contains the
 requirements for building and running the kernel, and information about
 the problems which may result by upgrading your kernel.
+
+Contributing:
+Want to add gaming tweaks or more WTF features? Open an issue or pull request
+at https://github.com/fandombreh/Excel.wtf.
+
+License:
+This project is licensed under the GNU General Public License v2.0 (GPL-2.0)
