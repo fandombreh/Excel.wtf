@@ -1,16 +1,16 @@
-# SPDX-License-Identifier: GPL-2.0
+SPDX-License-Identifier: GPL-2.0
 VERSION = 6
-PATCHLEVEL = 16
+PATCHLEVEL = 11
 SUBLEVEL = 0
-EXTRAVERSION = -rc2
-NAME = Baby Opossum Posse
+EXTRAVERSION = -excelwtf
+NAME = Excel.wtf: Fragging Edition
 
-# *DOCUMENTATION*
-# To see a list of typical targets execute "make help"
-# More info can be located in ./README
-# Comments in this file are targeted only to the developer, do not
-# expect to learn how to build the kernel reading this file.
-
+DOCUMENTATION
+To see a list of typical targets execute "make help"
+More info can be located in ./README
+Comments in this file are targeted only to the developer, do not
+expect to learn how to build the kernel reading this file.
+$(info Excel.wtf: Optimized for low-latency gaming)
 ifeq ($(filter output-sync,$(.FEATURES)),)
 $(error GNU Make >= 4.0 is required. Your Make version is $(MAKE_VERSION))
 endif
